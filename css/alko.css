@@ -1,0 +1,143 @@
+body {
+	padding: 0;
+	margin: 0;
+	color: black;
+	font-size: 16px;
+}
+
+* {
+	box-sizing: border-box;
+    font-family: 'Vast Shadow', cursive;
+    font-family: 'Allerta Stencil', sans-serif;
+    
+    font-family: 'Space Mono', monospace;
+    font-family: 'Vast Shadow', cursive;
+   
+
+}
+
+
+#header{
+    background: url('../image/slide.jpg') no-repeat center / cover;  
+    margin: 0 auto;
+    padding-top: 20 px;
+    border: black;
+    max-height: 100%;
+    
+}
+
+.title_collections {
+   
+   
+    font-family: 'Vast shadow'; 
+
+}
+.title_collections a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 40 px;
+    color:#fff;
+    margin-right: 80px;
+    letter-spacing: 0.3em;
+
+}
+.menu{
+    font-family: monospace;
+    display: flex;
+    list-style-type: none;
+}
+
+.menu li a{
+    font-family:monospace ;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 30px;
+    text-shadow: 1px 1px 2px rgb(204, 26, 26), 0 0 1em #28c4a7a1; 
+    margin-right: 40px;
+    letter-spacing: 00.1em;
+    line-height: 2em;
+}
+.title_collections a:hover{
+    color:hotpink;        /* Цвет ссылки */ 
+    padding: 3px;            /* Поля вокруг текста */ 
+    
+}
+
+   .menu a:hover {
+    color: aqua;
+    padding: 3px; 
+   } 
+
+.navigat{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+.logo1 {
+   
+    position: left;
+    margin-top: 100px;
+    margin-left: 10px;
+    float:left; /* Выравнивание по левому краю */
+    padding: 0px 20px 0px 0; /* Отступы вокруг картинки */
+    float: right; /* Выравнивание по правому краю  */ 
+    margin: 10px 0 10px 10px; /* Отступы вокруг картинки */
+   }
+.container{
+    align-items: center;
+    margin: 0 auto; /*позиционирование по центру*/
+    
+}
+.description {
+    margin-top: 150px;
+    margin-bottom: 20px;
+    justify-content: center;
+    text-align: center;
+    line-height: 20px;
+}
+
+.title-alco {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 34px;
+    color: white;
+    text-align: center;
+    letter-spacing: 0.1em;
+    margin-bottom: 25 px;
+}
+.under-title{
+ 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   font-size: 20px;
+   letter-spacing: 0.3em;
+   color: whitesmoke;
+  
+   
+}
+#section{
+    background:  #fff;
+    margin: 0;
+    border: black;
+    padding: 20px 20px 20px 20px;
+    display: flex; 
+}
+.gallery{
+    margin-top: 20px;
+  
+}
+.wrapper1{
+    margin-right:  auto;
+    margin-left:  auto;
+    max-width: 100%;
+    justify-content: space-around;
+    display: flex;
+    float: left;
+    
+   
+}
+.item{
+    width: 270px;
+    height: 270px;
+	float:none;
+	box-align: center;   
+}
