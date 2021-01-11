@@ -9,7 +9,7 @@ body {
 	box-sizing: border-box;
     font-family: 'Vast Shadow', cursive;
     font-family: 'Allerta Stencil', sans-serif;
-    
+    max-width: 100%;
     font-family: 'Space Mono', monospace;
     font-family: 'Vast Shadow', cursive;
    
@@ -18,9 +18,10 @@ body {
 
 
 #header{
-    background: url('../image/slide.jpg') no-repeat center / cover;  
+    background: url('../image/slide.jpg') no-repeat center / cover; 
     margin: 0 auto;
     padding-top: 20 px;
+    padding-bottom: 20px;
     border: black;
     max-height: 100%;
     
@@ -72,15 +73,16 @@ body {
 .navigat{
     display: flex;
     align-items: center;
-    padding-left: 20px;
+    padding-left: 40px;
+    padding-bottom: 40px;
 }
 .logo1 {
    
     position: left;
-    margin-top: 100px;
+    margin-top: 10px;
     margin-left: 10px;
-    float:left; /* Выравнивание по левому краю */
-    padding: 0px 20px 0px 0; /* Отступы вокруг картинки */
+    float:right; /* Выравнивание по левому краю */
+    padding: 0px 10px 0px 0; /* Отступы вокруг картинки */
     float: right; /* Выравнивание по правому краю  */ 
     margin: 10px 0 10px 10px; /* Отступы вокруг картинки */
    }
@@ -90,9 +92,8 @@ body {
     
 }
 .description {
-    margin-top: 150px;
-    margin-bottom: 20px;
-    justify-content: center;
+    margin-top: 70px;
+    justify-content:flex-end;
     text-align: center;
     line-height: 20px;
 }
@@ -111,33 +112,32 @@ body {
    font-size: 20px;
    letter-spacing: 0.3em;
    color: whitesmoke;
+   
   
    
 }
 #section{
-    background:  #fff;
-    margin: 0;
+    background: url('../image/wall.jpg') no-repeat center / cover;
     border: black;
-    padding: 20px 20px 20px 20px;
-    display: flex; 
-}
-.gallery{
-    margin-top: 20px;
-  
-}
-.wrapper1{
-    margin-right:  auto;
-    margin-left:  auto;
-    max-width: 100%;
-    justify-content: space-around;
-    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;  
+    display:flex; 
     float: left;
-    
-   
+    flex-wrap:wrap;
+    max-width: 100%;
 }
-.item{
-    width: 270px;
-    height: 270px;
-	float:none;
-	box-align: center;   
+.wrap{
+    display:flex; 
+
 }
+img.item{
+  
+    box-sizing:border-box;
+    width: 250px;
+    height: 250px;
+    border: 2px solid #fff; /* Рамка вокруг фотографии */
+    margin: 30px; /* Расстояние от картинки до рамки */
+    object-fit:contain;
+}
+
