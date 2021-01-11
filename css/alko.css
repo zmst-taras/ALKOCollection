@@ -9,7 +9,7 @@ body {
 	box-sizing: border-box;
     font-family: 'Vast Shadow', cursive;
     font-family: 'Allerta Stencil', sans-serif;
-    
+    max-width: 100%;
     font-family: 'Space Mono', monospace;
     font-family: 'Vast Shadow', cursive;
    
@@ -18,14 +18,14 @@ body {
 
 
 #header{
-    background: url('../image/slide.jpg') no-repeat center / cover;  
+    background: url('../image/slide.jpg') no-repeat center / cover; 
     margin: 0 auto;
     padding-top: 20 px;
+    padding-bottom: 20px;
     border: black;
     max-height: 100%;
     
 }
-
 
 .title_collections {
    
@@ -39,7 +39,7 @@ body {
     font-size: 40 px;
     color:#fff;
     margin-right: 80px;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.3em;
 
 }
 .menu{
@@ -47,83 +47,97 @@ body {
     display: flex;
     list-style-type: none;
 }
+
 .menu li a{
     font-family:monospace ;
     color: white;
     text-transform: uppercase;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 30px;
+    text-shadow: 1px 1px 2px rgb(204, 26, 26), 0 0 1em #28c4a7a1; 
     margin-right: 40px;
     letter-spacing: 00.1em;
+    line-height: 2em;
 }
+.title_collections a:hover{
+    color:hotpink;        /* Цвет ссылки */ 
+    padding: 3px;            /* Поля вокруг текста */ 
+    
+}
+
+   .menu a:hover {
+    color: aqua;
+    padding: 3px; 
+   } 
+
 .navigat{
     display: flex;
     align-items: center;
-    padding-left: 20px;
+    padding-left: 40px;
+    padding-bottom: 40px;
 }
 .logo1 {
    
     position: left;
-    margin-top: 100px;
+    margin-top: 10px;
     margin-left: 10px;
-    z-index: 100;
-    float:left; /* Выравнивание по левому краю */
-    padding: 0px 20px 0px 0; /* Отступы вокруг картинки */
+    float:right; /* Выравнивание по левому краю */
+    padding: 0px 10px 0px 0; /* Отступы вокруг картинки */
     float: right; /* Выравнивание по правому краю  */ 
     margin: 10px 0 10px 10px; /* Отступы вокруг картинки */
    }
-	
-   }
-   .simpson img {
-	border: none;		
-    margin left:20px;
-   
-    		
-}
- 
-.simpson a img {
-	border: none;		
-	margin: 20px;			
-}
 .container{
     align-items: center;
     margin: 0 auto; /*позиционирование по центру*/
     
 }
 .description {
-	margin-top: 150px;
-    justify-content: center;
+    margin-top: 70px;
+    justify-content:flex-end;
     text-align: center;
     line-height: 20px;
 }
 
 .title-alco {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 24px;
+    font-size: 34px;
     color: white;
     text-align: center;
     letter-spacing: 0.1em;
-	line-height: 5px;
+    margin-bottom: 25 px;
 }
 .under-title{
  
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-   font-size: 12px;
+   font-size: 20px;
    letter-spacing: 0.3em;
    color: whitesmoke;
+   
+  
+   
 }
 #section{
-    background-color: gray;
-    margin: 0 auto;
-    padding: 0 px;
+    background: url('../image/wall.jpg') no-repeat center / cover;
     border: black;
-   
-    display: flex; 
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;  
+    display:flex; 
+    float: left;
+    flex-wrap:wrap;
+    max-width: 100%;
 }
-.gallery{
-    flex-wrap: wrap;
-    align-items: center;
-    justify-items: center;
-    margin: 20%;
-    size: 100%;
+.wrap{
+    display:flex; 
+
 }
+img.item{
+  
+    box-sizing:border-box;
+    width: 250px;
+    height: 250px;
+    border: 2px solid #fff; /* Рамка вокруг фотографии */
+    margin: 30px; /* Расстояние от картинки до рамки */
+    object-fit:contain;
+}
+
