@@ -2,22 +2,22 @@ body {
 	padding: 0;
 	margin: 0;
 	color: black;
-	font-size: 16px;
+    font-size: 16px;
+    position: absolute;
 }
 
 * {
 	box-sizing: border-box;
     font-family: 'Vast Shadow', cursive;
     font-family: 'Allerta Stencil', sans-serif;
-    max-width: 100%;
     font-family: 'Space Mono', monospace;
     font-family: 'Vast Shadow', cursive;
-   
-
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 
-#header{
+.header{
     background: url('../image/slide.jpg') no-repeat center / cover; 
     margin: 0 auto;
     padding-top: 20 px;
@@ -27,75 +27,69 @@ body {
     
 }
 
-.title_collections {
-   
-   
-    font-family: 'Vast shadow'; 
-
-}
-.title_collections a {
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 40 px;
-    color:#fff;
-    margin-right: 80px;
-    letter-spacing: 0.3em;
-
-}
-.menu{
-    font-family: monospace;
-    display: flex;
-    list-style-type: none;
-}
-
-.menu li a{
-    font-family:monospace ;
-    color: white;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 30px;
-    text-shadow: 1px 1px 2px rgb(204, 26, 26), 0 0 1em #28c4a7a1; 
-    margin-right: 40px;
-    letter-spacing: 00.1em;
-    line-height: 2em;
-}
-.title_collections a:hover{
-    color:hotpink;        /* Цвет ссылки */ 
-    padding: 3px;            /* Поля вокруг текста */ 
-    
-}
-
-   .menu a:hover {
-    color: aqua;
-    padding: 3px; 
-   } 
-
 .navigat{
     display: flex;
     align-items: center;
     padding-left: 40px;
     padding-bottom: 40px;
-}
-.logo1 {
-   
-    position: left;
-    margin-top: 10px;
-    margin-left: 10px;
-    float:right; /* Выравнивание по левому краю */
-    padding: 0px 10px 0px 0; /* Отступы вокруг картинки */
-    float: right; /* Выравнивание по правому краю  */ 
-    margin: 10px 0 10px 10px; /* Отступы вокруг картинки */
-   }
-.container{
-    align-items: center;
-    margin: 0 auto; /*позиционирование по центру*/
+
     
 }
-.description {
-    margin-top: 70px;
-    justify-content:flex-end;
-    text-align: center;
-    line-height: 20px;
+
+.button{
+    margin: 0;
+    display: flex;
+    background: none;
+    width: 100%; 
+    border: none;
+}
+
+.logo1 {
+   
+    left: 0;
+    padding: 0px 10px 0px 0; /* Отступы вокруг картинки */
+    margin: 10px 0 10px 10px; /* Отступы вокруг картинки */
+}
+
+.title_collections{
+    font-family: 'Vast shadow'; 
+    font-size: 40 px;
+    color:#fff;
+    margin-right: 40px;
+    letter-spacing: 0.3em;
+}
+
+.button :hover{
+    color:hotpink;        /* Цвет ссылки */    
+}
+
+.search{
+    position: absolute;
+    display: table;
+    
+    
+}
+.menu{
+    font-family: monospace;
+    display: flex;
+    list-style-type: none;
+    margin: 0%;
+    position: absolute;
+    right: 0%;
+}
+
+ .menu a:hover {
+    color: aqua;  
+   } 
+
+.menu li a{
+    font-family:monospace ;
+    color: white;
+    font-size: 30px;
+    text-shadow: 1px 1px 2px rgb(204, 26, 26), 0 0 1em #28c4a7a1; 
+    margin-right: 40px;
+    letter-spacing: 00.1em;
+    line-height: 2em;
 }
 
 .title-alco {
@@ -105,17 +99,27 @@ body {
     text-align: center;
     letter-spacing: 0.1em;
     margin-bottom: 25 px;
+    
 }
 .under-title{
  
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
    font-size: 20px;
    letter-spacing: 0.3em;
-   color: whitesmoke;
-   
-  
-   
+   color: whitesmoke; 
 }
+
+              /*основа / section*/
+
+.description {
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 70px;
+    justify-content:flex-end;
+    text-align: center;
+    line-height: 20px;
+}
+
 #section{
     background: url('../image/wall.jpg') no-repeat center / cover;
     border: black;
@@ -134,6 +138,7 @@ body {
 img.item{
   
     box-sizing:border-box;
+    background: #fff;
     width: 250px;
     height: 250px;
     border: 2px solid #fff; /* Рамка вокруг фотографии */
